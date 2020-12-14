@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--  Employee表映射配置  -->
+    <class name="org.tuna.pojo.Employee" table="tbl_emp">
+        <id name="emp_id" type="java.lang.Integer">
+            <column name="emp_id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="emp_name" type="java.lang.String">
+            <column name="emp_name"/>
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="gender"/>
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="email"/>
+        </property>
+        <property name="dep_id" type="integer">
+            <column name="dep_id"/>
+        </property>
+    </class>
+</hibernate-mapping>
